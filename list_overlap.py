@@ -21,3 +21,6 @@ print(y)
 
 #x = [set(a + b)] #nope
 #print(x)
+
+x = [*set(a).intersection(b)]
+print(x)
