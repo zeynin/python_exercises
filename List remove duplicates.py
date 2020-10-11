@@ -9,13 +9,15 @@ print(c)
 
 def uniqueCombined():
     e = []
+    x = 0
     d = a + b
     print(d)
     for i in d:
-        if(i not in e):
+        if(i == d[x]):
             e.append(i)
-        elif(i in d):
-            d.remove(i)
+            #d.remove(i)
+        
+        x += 1
     print(e)
     return d
 
