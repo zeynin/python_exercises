@@ -7,7 +7,7 @@ c = set(a + b)
 
 print(c)
 
-def uniqueCombined():
+def uniqueSortedCombined():
     d = sorted(a + b)
     for i in range(1,len(d)):
         if i >= len(d): break
@@ -16,7 +16,7 @@ def uniqueCombined():
 
     return d
 
-print(uniqueCombined())
+print(uniqueSortedCombined())
 
 def solution(x):
   y = []
