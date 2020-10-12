@@ -8,17 +8,12 @@ c = set(a + b)
 print(c)
 
 def uniqueCombined():
-    e = []
-    x = 0
-    d = a + b
-    print(d)
-    for i in d:
-        if(i == d[x]):
-            e.append(i)
-            #d.remove(i)
-        
-        x += 1
-    print(e)
+    d = sorted(a + b)
+    for i in range(1,len(d)):
+        if i >= len(d): break
+        while(d[i] == d[i-1]):
+            d.remove(d[i])
+
     return d
 
 print(uniqueCombined())
