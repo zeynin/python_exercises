@@ -17,3 +17,12 @@ def uniqueCombined():
     return d
 
 print(uniqueCombined())
+
+def solution(x):
+  y = []
+  for i in x:
+    if i not in y:
+      y.append(i)
+  return y
+
+print(solution(a+b))
