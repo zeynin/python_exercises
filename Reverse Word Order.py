@@ -10,7 +10,7 @@ def reverseList(asIs=['this', 'is', 'my', 'name']):
     #solution
     #return ' '.join(asIs.split()[::-1])
  
-    return ' '.join([i for i in asIs.split()[::-1]])
+    #return ' '.join([i for i in asIs.split()[::-1]])
 
     '''
     toBe = asIs.split()
@@ -19,5 +19,11 @@ def reverseList(asIs=['this', 'is', 'my', 'name']):
     '''
 
     #return ' '.join( reversed(asIs.split()) )
+
+    y = asIs.split()
+    result = []
+    for word in y:
+        result.insert(0,word)
+    return " ".join(result)
          
 print(reverseList(strings))
