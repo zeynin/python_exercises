@@ -8,8 +8,16 @@ def reverseList(asIs=['this', 'is', 'my', 'name']):
     #    print(strings[i * -1])
 
     #solution
-    #return ' '.join(w.split()[::-1])
+    #return ' '.join(asIs.split()[::-1])
  
-    return [i for i in asIs.split()[::-1]]
+    return ' '.join([i for i in asIs.split()[::-1]])
+
+    '''
+    toBe = asIs.split()
+    toBe.reverse()
+    return ' '.join(toBe)
+    '''
+
+    #return ' '.join( reversed(asIs.split()) )
          
 print(reverseList(strings))
