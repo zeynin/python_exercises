@@ -11,5 +11,5 @@ r = requests.get(url)
 
 soup = BeautifulSoup(r.text, 'html.parser')
 
-for title in soup.titles
-    print('title = ' + title)
+#for title in soup.titles:
+print(soup.title)
